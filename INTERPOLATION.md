@@ -107,7 +107,7 @@ What will happen here is as we move right it will `clamp` at a scale of `2`. How
 
 ## Handy Technique - .99
 
-The Animated library and interpolation is great, but it does have some downfalls. Sometimes you want to in essence trigger a `setValue` but if you are specifying an `inputRange` and `outputRange` all of these values will be animated to.
+The Animated library and interpolation is great, but it does have some downfalls. Sometimes you want to in essence trigger a `setValue` but if you are specifying an `inputRange` and `outputRange` all of these values will be animated too.
 
 In our opacity case it will always slowly step the animation down from `1` to `.2`. What if you want to have a drop off cliff. Like if the user moves it `75` it should immediately drop to `.2` opacity.
 
